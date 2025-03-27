@@ -18,6 +18,14 @@ public class Temperatura {
         return 1.8 * centigrados + 32;
     }
     
+    /**
+     * Calcula la pendiente dados valores enteros para las coordenadas de dos puntos.
+     * @param x1 Es el valor entero del componente en el eje x del punto 1.
+     * @param y1 Es el valor entero del componente en el eje y del punto 1.
+     * @param x2 Es el valor entero del componente en el eje x del punto 2.
+     * @param y2 Es el valor entero del componente en el eje y del punto 2.
+     * @return Valor de la pendiente de la recta que pasa por puntos dados.
+     */
     public static int calcularPendiente(int x1, int y1, int x2, int y2){
         return (y2-y1)/(x2-x1);
     }
